@@ -46,23 +46,8 @@
 }
 
 ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-.list ul li button{
-    position: absolute;
-    right: 0%;
-    background: #f34451;
-    color: #c1c1c1 !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
     padding: 10px;
-    border-radius: 0.4rem;
-    display: inline-block;
-    border: none;
 }
 
 .container{

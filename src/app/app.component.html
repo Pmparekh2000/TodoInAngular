@@ -9,23 +9,27 @@
   <h1 class="app-title">LCO todo list</h1>
 </div>
 
-<div class="container ">
+<div class="container">
   Add a todo ...
   <br>
   <input
   type="text" 
   class="input-text"
   placeholder="Type a todo " 
+  [(ngModel)]="todoValue"
+  (keyup.enter) = "addItem()"
   />
 
-  <button class="add-btn">Add Todo</button>
+  <button class="add-btn" (click)="addItem()">Add Todo</button>
 
   <div class="list">
     <ul>
-      <li>
-        <input type="checkbox" name="isDone">
-        Task 1
-        <button class="btn">Delete</button>
+      <li *ngFor="let item of list">
+        <input type="checkbox" 
+        name="isDone"
+        [(ngModel)]="item.isDone">
+        {{item.value}}
+        <button class="btn" (click)="deleteItem(item.id)">Delete</button>
       </li>
     </ul>
   </div>
