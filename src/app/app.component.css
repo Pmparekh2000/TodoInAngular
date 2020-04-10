@@ -41,7 +41,7 @@
 
 .app-title{
     text-align: center;
-    color: #fff;
+    color: #c1c1c1;
     font-size: 70px;
 }
 
@@ -54,7 +54,7 @@ ul{
     position: absolute;
     right: 0%;
     background: #f34451;
-    color: #fff !important;
+    color: #c1c1c1 !important;
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 10px;
